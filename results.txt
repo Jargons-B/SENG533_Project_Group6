@@ -1,0 +1,85 @@
+Exporting Documents Results
+1 Document: 0.64s
+10 Documents: 0.84s
+100 Documents: 0.99s
+1000 Documents: 9.93s
+5000 Documents: 30.88s
+10000 Documents: 41.70s
+25000 Documents: 54.43s
+
+Insert Query Results
+1 Document: 0.72s
+10 Documents: 0.10s
+100 Documents: 1.25s
+1000 Documents: 4.71s
+5000 Documents: 15.89s
+
+Update Query Results
+1 Document: 0.05s
+10 Documents: 0.52s
+100 Documents: 5.31s
+1000 Documents: 55.22s
+5000 Documents: 287.98s
+
+Delete Query Results (Indexing with _id field)
+1 Document: 0.05s
+10 Documents: 0.08s
+100 Documents: 0.08s
+1000 Documents: 1.30s
+5000 Documents: 13.83s
+
+Delete Query Results (no indexing)
+1 Document: 0.06s
+10 Documents: 0.09s
+100 Documents: 0.12s
+1000 Documents: 4.17s
+5000 Documents: 19.73s
+
+Concurrency testing with threads
+1 Thread: 0.56s
+5 Threads: 0.41s
+10 Threads: 0.43s
+15 Threads: 0.47s
+20 Threads: 0.44s
+25 Threads: 0.42s
+40 Threads: 0.82s
+50 Threads: 1.03s
+75 Threads: 1.11s
+100 Threads: 1.74s
+
+Single Aggregation Results w/ count
+Counted 5661 documents with prices between $5 and $100 which took 0.81 seconds
+
+Distinct Aggregation (Finding Queries with Distinct Amenities)
+Finding distinct amenities took 0.72 seconds
+
+Aggregation Pipeline for specific neighborhood and sorted by average price
+Run 1: 0.08 seconds
+Run 2: 0.12 seconds
+Run 3: 0.11 seconds
+
+Workload Results
+1 second:
+Average number of documents found per query: 5661.00
+Total documents found: 28305 (including duplicates)
+Performed 5 queries in 1 seconds.
+-
+30 seconds:
+Average number of documents found per query: 5661.00
+Total documents found: 2168163 (including duplicates)
+Performed 383 queries in 30 seconds.
+-
+60 seconds (1 min)
+Average number of documents found per query: 5661.00
+Total documents found: 3894768 (including duplicates)
+Performed 688 queries in 60 seconds.
+-
+300 seconds (5 min)
+Average number of documents found per query: 5661.00
+Total documents found: 20175804 (including duplicates)
+Performed 3564 queries in 300 seconds.
+-
+600 seconds (10 min)
+Average number of documents found per query: 5661.00
+Total documents found: 40946013 (including duplicates)
+Performed 7233 queries in 600 seconds.
